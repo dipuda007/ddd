@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Result Checker</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#1e3c72,#2a5298);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+}
+
+.container{
+    text-align:center;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+button{
+    padding:12px 25px;
+    font-size:18px;
+    border:none;
+    border-radius:8px;
+    background:#ff4d4d;
+    color:white;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+    background:#e60000;
+}
+
+#result{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+    color:#333;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h2>Check Your Result</h2>
+    <button onclick="showResult()">Check Result</button>
+    <p id="result"></p>
+</div>
+
+<script>
+function showResult(){
+    document.getElementById("result").innerText =
+    "laude result dekh ke kya karega gandu aisebhi fail hoga";
+}
+</script>
+
+</body>
+</html>
